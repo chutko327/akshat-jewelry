@@ -16,7 +16,7 @@ export default function Home() {
   useEffect(() => {
 
     const savedProducts =
-      JSON.parse(localStorage.getItem("products")) || [];
+  JSON.parse(localStorage.getItem("products") || "[]");
 
     setProducts(savedProducts);
     console.log(savedProducts);
