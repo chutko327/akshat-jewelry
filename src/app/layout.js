@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Playfair_Display } from "next/font/google";
-import type { ReactNode } from "react";
+
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -12,11 +12,7 @@ export const metadata = {
   description: "Luxury Jewelry Collection",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={playfair.variable}>
