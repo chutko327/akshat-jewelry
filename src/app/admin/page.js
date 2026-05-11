@@ -17,7 +17,7 @@ export default function AdminPage() {
   useEffect(() => {
 
     const savedProducts =
-  JSON.parse(localStorage.getItem("products") || "[]");
+  JSON.parse(localStorage.getItem("products") ?? "[]");
 
     setProducts(savedProducts);
 
